@@ -1,8 +1,8 @@
 import { CascaderOption } from './types';
 
 const district: CascaderOption[] = [
-  { value: '110000', label: '北京市', children: [{ value: '110100', label: '市辖区' }] },
-  { value: '120000', label: '天津市', children: [{ value: '120100', label: '市辖区' }] },
+  { value: '110000', label: '北京市', children: [{ value: '110100', label: '北京市' }] },
+  { value: '120000', label: '天津市', children: [{ value: '120100', label: '天津市' }] },
   {
     value: '130000',
     label: '河北省',
@@ -109,7 +109,7 @@ const district: CascaderOption[] = [
       { value: '232700', label: '大兴安岭地区' }
     ]
   },
-  { value: '310000', label: '上海市', children: [{ value: '310100', label: '市辖区' }] },
+  { value: '310000', label: '上海市', children: [{ value: '310100', label: '上海市' }] },
   {
     value: '320000',
     label: '江苏省',
@@ -348,7 +348,7 @@ const district: CascaderOption[] = [
     value: '500000',
     label: '重庆市',
     children: [
-      { value: '500100', label: '市辖区' },
+      { value: '500100', label: '重庆市' },
       { value: '500200', label: '县' }
     ]
   },
