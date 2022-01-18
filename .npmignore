@@ -7,13 +7,17 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
-# build
-es
-lib
-
 # Dependency directories
 node_modules
 .docz
 
 yarn.lock
 package-lock.json
+
+src
+scripts
+renovate.json
+script-tsconfig.json
+tsconfig.json
+.editorconfig
+.fatherrc.ts

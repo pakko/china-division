@@ -1,4 +1,4 @@
-import { padEnd, padStart } from 'lodash';
+import { padStart } from 'lodash';
 
 export interface PcaCode {
   code: string;
@@ -74,12 +74,12 @@ export function formatDistrict(data: PcaCode[], options: Options) {
   return data.map((item) => {
     if (!item.children || item.children.length === 0) {
       return {
-        [options.code]: padEnd(item.code, 6, '0'),
+        [options.code]: item.name,
         [options.name]: item.name
       };
     } else {
       return {
-        [options.code]: padEnd(item.code, 6, '0'),
+        [options.code]: item.name,
         [options.name]: item.name,
         [options.children]: formatDistrict(item.children, options)
       };
